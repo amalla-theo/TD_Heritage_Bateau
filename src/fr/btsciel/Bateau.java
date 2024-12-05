@@ -1,7 +1,11 @@
+package fr.btsciel;
+
+import java.util.ArrayList;
+
 public class Bateau {
-    private double longueur;
-    private double largeur;
-    private String coque;
+    protected double longueur;
+    protected double largeur;
+    protected String coque;
 
     public double getLongueur() {
         return longueur;
@@ -26,4 +30,13 @@ public class Bateau {
     public void setCoque(String coque) {
         this.coque = coque;
     }
+
+    public Bateau(double longueur, double largeur, String coque) {
+        this.longueur = longueur;
+        this.largeur = largeur;
+        this.coque = coque;
+    }
+
+
 }
+
